@@ -689,9 +689,9 @@ class CsdnClientV2
 	 * 返回当前页、总记录数、每页记录数、评论对象的数组
 	 * 对应API：{@link http://open.csdn.net/wiki/api/blog/getarticlecomment blog/getarticlecomment}
 	 * 
-	 * @param int $article
-	 * @param int $page
-	 * @param int $size
+	 * @param int $article 文章的id
+	 * @param int $page 	当前页码，默认1
+	 * @param int $size    每页条数，默认15
 	 * @return array
 	 */
 	function blog_getarticlecomment($article,$page=1,$size=15)
