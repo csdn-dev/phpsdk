@@ -2,9 +2,9 @@
 session_start();
 
 include_once( 'config.php' );
-include_once( 'saetv2.ex.class.php' );
+include_once( 'csdnapi.class.php' );
 
-$c = new SaeTClientV2( WB_AKEY , WB_SKEY , $_SESSION['token']['access_token'] );
+$c = new CsdnClientV2( WB_AKEY , WB_SKEY , $_SESSION['token']['access_token'] );
 $rows = $c->blog_getcommentlist();//博主收到的评论
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

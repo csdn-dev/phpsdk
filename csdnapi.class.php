@@ -19,7 +19,7 @@ class OAuthException extends Exception {
  *
  * @version 1.0
  */
-class SaeTOAuthV2 {
+class CsdnOAuthV2 {
 	/**
 	 * @ignore
 	 */
@@ -95,7 +95,7 @@ class SaeTOAuthV2 {
 	 *
 	 * @ignore
 	 */
-	public $useragent = 'Sae T OAuth2 v0.1';
+	public $useragent = 'CSDN OAuth2 v0.1';
 
 	/**
 	 * print the debug info
@@ -395,11 +395,11 @@ class SaeTOAuthV2 {
 /**
  * CSDN操作类V2
  *
- * 使用前需要先手工调用saetv2.ex.class.php <br />
+ * 使用前需要先手工调用csdnapi.class.php <br />
  *
  * @version 1.0
  */
-class SaeTClientV2
+class CsdnClientV2
 {
 	/**
 	 * 构造函数
@@ -413,7 +413,7 @@ class SaeTClientV2
 	 */
 	function __construct( $akey, $skey, $access_token, $refresh_token = NULL)
 	{
-		$this->oauth = new SaeTOAuthV2( $akey, $skey, $access_token, $refresh_token );
+		$this->oauth = new CsdnOAuthV2( $akey, $skey, $access_token, $refresh_token );
 	}
 
 	/**
