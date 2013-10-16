@@ -53,7 +53,7 @@ class CsdnOAuthV2 {
 	 *
 	 * @ignore
 	 */
-	public $host = "http://newapi.csdn.net/";
+	public $host = "http://api.csdn.net/";
 	/**
 	 * Set timeout default.
 	 *
@@ -116,11 +116,11 @@ class CsdnOAuthV2 {
 	/**
 	 * @ignore
 	 */
-	function accessTokenURL()  { return 'http://newapi.csdn.net/oauth2/access_token'; }
+	function accessTokenURL()  { return 'http://api.csdn.net/oauth2/access_token'; }
 	/**
 	 * @ignore
 	 */
-	function authorizeURL()    { return 'http://newapi.csdn.net/oauth2/authorize'; }
+	function authorizeURL()    { return 'http://api.csdn.net/oauth2/authorize'; }
 
 	/**
 	 * construct CSDNOAuth object
